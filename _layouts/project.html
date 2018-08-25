@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="about">
+  <h1>{{ page.header }}</h1>
+  <a href="{{ page.src }}">
+    <img src="{{ site.baseurl }}/img/{{ page.imgSrc }}" alt="Photo of {{ page.imgAlt }}">
+  </a>
+
+  <h2>What is This</h2>
+  <p>{{ page.meta }}</p>
+
+  <h2>Built With</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    {% if page.javaScript %}
+      <li>javaScript</li>
+    {% endif %}
+    {% if page.library %}
+      <li>{{ page.library }}</li>
+    {% endif %}
+
+  </ul>
+
+  <h2>Challenges</h2>
+  {{ content }}
+
+  <div class="btn-container">
+    <a class="btn" href="{{ page.src }}">View Project</a>
+  </div>
+</div>

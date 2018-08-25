@@ -1,0 +1,21 @@
+---
+layout: default
+title: Projects · Daniel Munoz
+---
+
+<div class="about">
+  {% for project in site.projects %}
+    <div class="about__project">
+      <h2>{{ project.header }}</h2>
+      <a href="{{ site.baseurl }}/projects/{{ project.slug }}">
+        <img src="{{ site.baseurl }}/img/{{ project.imgSrc }}" alt="Photo of {{ project.imgAlt }}">
+      </a>
+      <div class="meta">
+        <p>{{ project.meta }}</p>
+        <div class="btn-container btn-container--project">
+          <a class="btn" href="{{ site.baseurl }}{{ project.slug }}">View Project</a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
