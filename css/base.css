@@ -15,3 +15,12 @@ body {
   color: #222;
   background-color: #f5f5f5;
 }
+
+.about__skills h3,
+.about__skills p {
+  margin-top: 0;
+}
+
+img {
+  width: 100%;
+}

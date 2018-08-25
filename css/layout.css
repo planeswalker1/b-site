@@ -2,3 +2,74 @@
   max-width: 1360px;
   margin: 0 auto;
 }
+
+/* nav styles */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__name,
+.nav__list {
+  flex: 1;
+}
+
+.nav a:hover,
+.link:hover {
+  color: #000;
+}
+
+/* main styles */
+.about {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.about__skills {
+  display: flex;
+  justify-content: center;
+}
+
+.about__skills > div:nth-of-type(1) {
+  flex: 1;
+}
+
+.about__skills > div:nth-of-type(2) {
+  flex: 2;
+}
+
+/* media styles */
+@media screen and (max-width: 960px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav__name {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .nav__name,
+  .nav__list {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    width: 80%;
+  }
+
+  .about__skills {
+    display: block;
+  }
+}

@@ -1,0 +1,72 @@
+/* nav styles */
+.nav__name {
+  margin-left: 10px;
+}
+
+/* main styles */
+.intro {
+  text-align: center;
+}
+
+.about__project {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about__skills {
+  padding: 20px 0;
+}
+
+.about__skills--border {
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.card__p {
+  font-weight: 300;
+}
+
+.skills__list {
+  margin-left: 20px;
+  padding: 0;
+}
+
+/* button styles */
+.btn-container {
+  margin: 30px 30px 30px 0;
+}
+
+.btn-container--project {
+  margin: 30px;
+}
+
+.btn {
+  background-color: #000;
+  border-radius: 15px;
+  color: #fff;
+  list-style: none;
+  padding: 10px 20px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.7s;
+}
+
+.btn:hover {
+  top: 1px;
+  background-color: #555;
+}
+
+.contact {
+  position: relative;
+}
+
+.circle {
+  background-color: #00ff00;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+
+  position: absolute;
+  top: 35%;
+  left: -15px;
+}
